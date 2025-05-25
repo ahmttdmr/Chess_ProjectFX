@@ -45,8 +45,7 @@
 
 1.  When the application opens, create a new user with "Register" or log in with an existing one using "Login".
 2.  Select a piece on the board; valid moves are automatically highlighted.
-3.  Move the piece using drag-and-drop or click-to-click.
-4.  If necessary, undo the last move with the "Undo" button.
+3.  Move the piece using drag-and-drop
 
 ## Project Structure
 
