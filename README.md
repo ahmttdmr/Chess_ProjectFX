@@ -2,8 +2,6 @@ JavaFX Chess Game
 
 A fully-featured, two-player desktop chess game developed using JavaFX. This project provides a complete and interactive chess experience with a graphical user interface, user account management, persistent statistics, and full implementation of chess rules, including special moves.
 
-(Not: Yukarıdaki ekran görüntüsü linkini kendi ekran görüntünüzle güncellemeyi unutmayın. Projenizin bir ekran görüntüsünü (örneğin ChessApp.png) repoya yükleyip linki düzenleyebilirsiniz.)
-
 🌟 Key Features
 This application goes beyond a simple chess engine by offering a rich set of features for an engaging user experience.
 
@@ -23,8 +21,6 @@ Authentication System: A dedicated LoginScreen provides a user-friendly interfac
 Persistent Win Tracking: The UserStatsManager class records player victories, ensuring that user statistics are maintained across multiple game sessions.
 Advanced Gameplay Features:
 
-Undo Move: Players can take back their last move, thanks to a robust state management system that tracks every action.
-Custom Application Icon: The application window features a custom icon for a polished and professional look.
 🛠️ Technologies Used
 Language: Java (JDK 11+ recommended)
 Framework: JavaFX for the graphical user interface.
