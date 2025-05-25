@@ -82,12 +82,12 @@ src/
 
 ## Screenshots
 
-<img src="images/LoginScreen"   width="300" alt="LoginScreen" />
-<img src="images/LoginScreen2"   width="300" alt="LoginFail" />
-<img src="images/LoginScreen3"   width="300" alt="Registeration" />
-<img src="images/Gameplay"   width="300" alt="Drag&Move" />
-<img src="images/Gameplay2"   width="300" alt="Pawn Promotion" />
-<img src="images/Gameplay3"   width="300" alt="CheckMate" />
+<img src="images/LoginScreen.png"   width="300" alt="LoginScreen" />
+<img src="images/LoginScreen2.png"   width="300" alt="LoginFail" />
+<img src="images/LoginScreen3.png"   width="300" alt="Registeration" />
+<img src="images/Gameplay.png"   width="300" alt="Drag&Move" />
+<img src="images/Gameplay2.png"   width="300" alt="Pawn Promotion" />
+<img src="images/Gameplay3.png"   width="300" alt="CheckMate" />
 
 
 
