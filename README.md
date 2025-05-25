@@ -14,7 +14,6 @@
 
       - Drag-and-drop or click-to-move method
       - Highlighting legal moves for the selected piece
-      - Customizable theme and icons
 
   - **User Management & Persistence**
 
