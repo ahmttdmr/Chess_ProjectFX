@@ -1,4 +1,5 @@
 JavaFX Chess Game
+
 A fully-featured, two-player desktop chess game developed using JavaFX. This project provides a complete and interactive chess experience with a graphical user interface, user account management, persistent statistics, and full implementation of chess rules, including special moves.
 
 (Not: Yukarıdaki ekran görüntüsü linkini kendi ekran görüntünüzle güncellemeyi unutmayın. Projenizin bir ekran görüntüsünü (örneğin ChessApp.png) repoya yükleyip linki düzenleyebilirsiniz.)
