@@ -1,59 +1,52 @@
 # Chess ProjectFX
 
-**Chess ProjectFX** is a fully-featured, two-player desktop chess game built with JavaFX.  
-It implements all official FIDE rules, provides a modern GUI, user authentication, persistent statistics, and convenient game controls.
+**Chess ProjectFX** is a fully-featured, two-player desktop chess game built with JavaFX. It implements all official FIDE rules, provides a modern GUI, user authentication, persistent statistics, and convenient game controls.
 
 ## Features
 
-- **Complete Chess Logic**  
-  - Pawn, Rook, Knight, Bishop, Queen, King hareketleri  
-  - Special moves: Castling, Pawn Promotion, En Passant  
-  - Otomatik Check & Checkmate tespiti
+  - **Complete Chess Logic**
 
-- **Intuitive GUI**  
-  - Sürükle-bırak veya tıkla-taşı yöntemi  
-  - Seçilen taşın yasal hamlelerinin vurgulanması  
-  - Özelleştirilebilir tema ve ikon
+      - Pawn, Rook, Knight, Bishop, Queen, King movements
+      - Special moves: Castling, Pawn Promotion
+      - Automatic Check & Checkmate detection
 
-- **User Management & Persistence**  
-  - Kayıt / Giriş ekranı  
-  - Oyuncu istatistiklerini (galibiyet sayısı vs.) `users.txt` altında saklama  
-  - “Undo” işleviyle son hamleyi geri alabilme
+  - **Intuitive GUI**
+
+      - Drag-and-drop or click-to-move method
+      - Highlighting legal moves for the selected piece
+      - Customizable theme and icons
+
+  - **User Management & Persistence**
+
+      - Register / Login screen
+      - Storing player statistics (win count, etc.) in `users.txt`
+      - Ability to undo the last move with the "Undo" function
 
 ## Prerequisites
 
-- Java Development Kit (JDK) **11+**  
-- JavaFX SDK (compatible with your JDK)  
-- Maven **3.6+** (veya tercihe göre Gradle)  
-- IDE: IntelliJ IDEA, Eclipse, vb.
+  - Java Development Kit (JDK) **11+**
+  - JavaFX SDK (compatible with your JDK)
+  - Maven **3.6+** (or Gradle, as preferred)
+  - IDE: IntelliJ IDEA
 
 ## Installation & Run
 
-1. Repository’yi klonla:  
-   ```bash
-   git clone https://github.com/ahmttdmr/Chess_ProjectFX.git
-   cd Chess_ProjectFX
+1.  Clone the repository:
 
-2. IDE’de Maven projesi olarak aç.
-3. JavaFX’i ayarla:
+    ```bash
+    git clone https://github.com/ahmttdmr/Chess_ProjectFX.git
+    ```
+2. After cloning this repo, open the project in your IDE.
+3. Navigate to "ChessApp.java" and run the app.
+   
 
-   * VM seçeneklerine ekle:
-
-     ```
-     --module-path /path/to/javafx-sdk/lib --add-modules javafx.controls,javafx.fxml
-     ```
-4. Uygulamayı başlat:
-
-   ```bash
-   mvn clean javafx:run
-   ```
 
 ## Usage
 
-1. Uygulama açıldığında “Register” ile yeni kullanıcı oluştur veya varolanla “Login” ol.
-2. Tahtada bir taşı seç; geçerli hamleler otomatik vurgulanır.
-3. Taşı sürükle-bırak ya da tıkla-tıkla taşı.
-4. Gerekirse “Undo” butonuyla son hamleyi geri al.
+1.  When the application opens, create a new user with "Register" or log in with an existing one using "Login".
+2.  Select a piece on the board; valid moves are automatically highlighted.
+3.  Move the piece using drag-and-drop or click-to-click.
+4.  If necessary, undo the last move with the "Undo" button.
 
 ## Project Structure
 
@@ -61,35 +54,30 @@ It implements all official FIDE rules, provides a modern GUI, user authenticatio
 src/
 └── main/
     ├── java/com/example/satranc2/
-    │   ├── ChessApp.java          ← Main uygulama sınıfı
-    │   ├── Piece.java             ← Tüm taşların temel sınıfı
-    │   ├── Pawn.java              ← Piyon hareket kuralları
-    │   ├── Rook.java              ← Kale hareket kuralları
-    │   ├── Knight.java            ← At hareket kuralları
-    │   ├── Bishop.java            ← Fil hareket kuralları
-    │   ├── Queen.java             ← Vezir hareket kuralları
-    │   ├── King.java              ← Şah hareket kuralları
-    │   ├── BoardManager.java      ← Tahta oluşturma ve güncelleme
-    │   ├── MoveManager.java       ← Hamle geçerlilik kontrolü
-    │   ├── LoginScreen.java       ← Giriş/Kayıt UI ve işlemleri
-    │   ├── UserManager.java       ← Kullanıcı verisi okuma/yazma
-    │   ├── UserStatsManager.java  ← İstatistiklerin saklanması
-    │   └── MoveRecord.java        ← Undo için hamle kaydı
+    │   ├── ChessApp.java         ← Main application class
+    │   ├── Piece.java            ← Base class for all pieces
+    │   ├── Pawn.java             ← Pawn movement rules
+    │   ├── Rook.java             ← Rook movement rules
+    │   ├── Knight.java           ← Knight movement rules
+    │   ├── Bishop.java           ← Bishop movement rules
+    │   ├── Queen.java            ← Queen movement rules
+    │   ├── King.java             ← King movement rules
+    │   ├── BoardManager.java     ← Board creation and updating
+    │   ├── MoveManager.java      ← Move validation check
+    │   ├── LoginScreen.java      ← Login/Register UI and operations
+    │   ├── UserManager.java      ← User data reading/writing
+    │   ├── UserStatsManager.java ← Storing statistics
+    │   └── MoveRecord.java       ← Move recording for Undo
     └── resources/
-        ├── fxml/                  ← FXML dosyaları
-        └── images/                ← Taş ve ikon görüntüleri
+        ├── fxml/                 ← FXML files
+        └── images/               ← Piece and icon images
 ```
 
 ## Screenshots
 
-<img src="images/LoginScreen.png"   width="300" alt="LoginScreen" />
-<img src="images/LoginScreen2.png"   width="300" alt="LoginFail" />
-<img src="images/LoginScreen3.png"   width="300" alt="Registeration" />
-<img src="images/Gameplay.png"   width="300" alt="Drag&Move" />
-<img src="images/Gameplay2.png"   width="300" alt="Pawn Promotion" />
-<img src="images/Gameplay3.png"   width="300" alt="CheckMate" />
-
-
-
-
-
+<img src="images/LoginScreen.png"   width="300" alt="Login Screen" />
+<img src="images/LoginScreen2.png"  width="300" alt="Login Fail" />
+<img src="images/LoginScreen3.png"  width="300" alt="Registration" />
+<img src="images/Gameplay.png"  width="300" alt="Drag & Move" />
+<img src="images/Gameplay2.png" width="300" alt="Pawn Promotion" />
+<img src="images/Gameplay3.png" width="300" alt="Checkmate" />
