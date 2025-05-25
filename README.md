@@ -20,13 +20,12 @@
 
       - Register / Login screen
       - Storing player statistics (win count, etc.) in `users.txt`
-      - Ability to undo the last move with the "Undo" function
 
 ## Prerequisites
 
   - Java Development Kit (JDK) **11+**
   - JavaFX SDK (compatible with your JDK)
-  - Maven **3.6+** (or Gradle, as preferred)
+  - Maven **3.6+**
   - IDE: IntelliJ IDEA
 
 ## Installation & Run
