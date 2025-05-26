@@ -59,12 +59,9 @@ src/
     │   ├── Bishop.java           ← Bishop movement rules
     │   ├── Queen.java            ← Queen movement rules
     │   ├── King.java             ← King movement rules
-    │   ├── BoardManager.java     ← Board creation and updating
-    │   ├── MoveManager.java      ← Move validation check
     │   ├── LoginScreen.java      ← Login/Register UI and operations
     │   ├── UserManager.java      ← User data reading/writing
-    │   ├── UserStatsManager.java ← Storing statistics
-    │   └── MoveRecord.java       ← Move recording for Undo
+    │   ├── UserStatsManager.java ← Storing statistics  
     └── resources/
         ├── fxml/                 ← FXML files
         └── images/               ← Piece and icon images
